@@ -1,0 +1,58 @@
+.card-container-manage-plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+    margin-left: 100px;
+}
+.workout-plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercise-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.card-title-manage-plans {
+    font-size: 21px;
+    color: #c01111;
+    margin-bottom: 10px;
+}
+
+.workout-title {
+    font-size: 17px;
+}
+
+.workouts {
+    font-size: 14px;
+}
+
+.bottom-card-buttons-manage-plans {
+    display: flex;
+    justify-content: center;
+    column-gap: 75px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.manage-plans-link {
+    text-decoration: none;
+}
+
+.manage-plans-link:link {
+    color: #c01111;
+}
+
+.manage-plans-link:hover {
+    text-decoration: underline;
+    color: #c01111;
+}
+
+.manage-plans-link:visited {
+    color: transparent;
+}

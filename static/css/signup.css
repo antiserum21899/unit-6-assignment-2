@@ -1,0 +1,46 @@
+.signup-form {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    row-gap: 20px;
+    width: 169px;
+}
+
+.first-name-container, .surname-container, .email-container, .phone-number-container, .signup-password-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.signup-button-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.confirm-button, .cancel-button {
+    color: #FF1616;
+    width: 79.5px;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.button-link:link {
+    color: #FF1616;
+}
+
+.button-link:hover {
+    color: #FF1616;
+}
+
+.button-link:visited {
+    color: #FF1616;
+}

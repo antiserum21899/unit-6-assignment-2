@@ -1,0 +1,47 @@
+#create-workout-plan-container {
+    height: 1000px;
+}
+
+.workout-plan-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    row-gap: 20px;
+    width: 264px;
+}
+
+.workout-plan-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.day-selector {
+    width: 100px;
+}
+
+.time-selector {
+    width: 78px;
+}
+
+.datetime {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    
+}
+
+ .workout-plan-name, .workout-name, .exercise-selector, .create-plan-save-button {
+     display: flex;
+     flex-direction: column;
+     row-gap: 5px;
+}
+
+.create-plan-save-button {
+    color: #FF1616;
+}
+
+.exercise-selector label {
+    padding-top: 7px;
+}

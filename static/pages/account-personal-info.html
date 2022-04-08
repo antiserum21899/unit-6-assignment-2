@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>24 Hour Fitness - Account Personal Information</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" href="../css/global.css">
+        <script type="text/javascript" src="../javascript/popups.js"></script>
+    </header>
+    <body>
+        <div class="nav-container">
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
+            <ul class="nav-list-left">
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
+            </ul>
+            <ul class="nav-list-right">
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
+            </ul>
+        </div>
+        <div class="personal-info-container">
+            <h2>Personal Information</h2>
+            <div class="info-container">
+                <div class="personal-info-name-container">
+                    <div class="name-label">Name: </div>
+                    <div>Lorem Ipsum</div>
+                </div>
+                <div class="personal-info-email-container">
+                    <div class="email-label">Email: </div>
+                    <div>loremipsum@gmail.com</div>
+                    <div><a href="#" class="update-email link">Update Email</a></div>
+                </div>
+            </div>
+            <h4>Change Password</h4>
+            <form class="change-pwd-form" id="change-password">
+                <div class="current-pwd-container">
+                    <label for="current-pwd">Current Password</label>
+                    <input class="input-box" id="currend-pwd" type="password" name="current-pwd">
+                </div>
+                <div class="new-pwd-container">
+                    <label for="new-pwd">New Password</label>
+                    <input class="input-box" id="new-pwd" type="password" name="new-pwd">
+                </div>
+            </form>
+            <div class="button-message-container">
+                <button class="confirm-new-pwd input-box" form="change-password" type="button" onclick="confirmChangePasswordMessage()">Confirm</button>
+            </div>
+            <p id="password-change-message"></p>
+            <div class="two-factor-auth-checkbox-container">
+                <div>2 Factor Authentication</div>
+                <input class="two-factor-auth-checkbox" type="checkbox" name="2fa">
+            </div>
+        </div>
+    </body>
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
+</html>

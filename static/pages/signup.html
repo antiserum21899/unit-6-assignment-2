@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>24 Hour Fitness - Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" href="../css/global.css">
+        <script type="text/javascript" src="../javascript/popups.js"></script>
+    </header>
+    <body>
+        <div class="nav-container">
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
+            <ul class="nav-list-left">  
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
+            </ul>
+            <ul class="nav-list-right">
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
+            </ul>
+        </div>
+            <h1>Signup</h1>
+            <form class="signup-form" method="post">
+                <div class="signup-form-container">
+                    <div class="first-name-container">    
+                        <label for="first-name">First Name</label><br>
+                        <input id="first-name" onfocus="this.value=''" class="input-box" type="text" name="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="surname-container">
+                        <label for="sur-name" >Surname</label><br>
+                        <input id="sur-name" class="input-box" type="text" name="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="email-container">
+                        <label for="e-mail">Email</label><br>
+                        <input id="e-mail" class="input-box" type="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="phone-number-container">
+                        <label for="phone-number">Phone Number</label><br>
+                        <input id="phone-number" class="input-box" type="tel" name="phonenumber" placeholder="07185516729" required>
+                    </div>
+                    <div class="signup-password-container">
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password" class="input-box" type="password" name="password" required>
+                    </div>
+                    <div class="signup-password-container">
+                        <label for="signup-password">Repeat Password</label>
+                        <input id="signup-password" class="input-box" type="password" name="password" required>
+                    </div>
+                    <div class="signup-button-container">
+                        <a class="button-link" href="account.html"><button type="button" onclick="confirmSignupMessage()" class="input-box confirm-button" name="confirm">Confirm</button></a>
+                        <a class="button-link" href="../../index.html"><button class="input-box cancel-button" type="button">Cancel</button></a>
+                    </div>
+                </div>
+            </form>
+    </body>
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
+</html>

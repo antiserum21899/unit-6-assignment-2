@@ -1,0 +1,36 @@
+
+th, td {
+    padding: 10px;
+}
+
+.table-buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.table-view-buttons {
+    display: flex;
+    align-self: center;
+    column-gap: 7px;
+    
+}
+
+.calendar-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.eight .Monday, .eight .Wednesday, .eight .Friday {
+    background-color: #a52626;
+}
+
+.eight .Tuesday, .eight .Thursday {
+    background-color: #7c0e0e;
+}
+
+.seventeen .Monday, .seventeen .Wednesday, .seventeen .Friday {
+    background-color: #5c1111;
+}

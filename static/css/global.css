@@ -1,0 +1,174 @@
+@import "create.css";
+@import "view.css";
+@import "about.css";
+@import "login.css";
+@import "signup.css";
+@import "account.css";
+@import "personal-info.css";
+@import "manage-plans.css";
+
+html {
+    background-color: #292626;
+    font-family: "Open Sans", sans-serif;
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 1000px; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: #FF1616;
+    text-align: center;
+    padding: 20px;
+}
+ 
+#creation-message {
+    text-align: center;
+}
+
+.main {
+    height: 1000px;
+}
+
+.logo-link {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 2px 2px black;
+}
+
+.nav-container li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.nav-list-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+
+}
+
+.nav-list-right {
+    margin: 0;
+    margin-left: auto;    
+}
+
+.nav-list-left .home {
+    border-left: 1px solid #FF1616;    
+}
+
+.nav-list-left li {
+    border-right: 1px solid #FF1616; 
+}
+
+.nav-list-right li {
+    border-left: 1px solid #FF1616;
+}
+
+#return-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.return-to-top-link {
+    font-size: 15px;
+    border: 1px solid #FF1616;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:link {
+    color: #D9D9D9;
+}
+
+.link:hover {
+    color: #FF1616;
+}
+
+.link:visited {
+    color: transparent;
+}
+
+.footer-nav-bar-container {
+    background-color: #646060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 10px;
+    gap: 30px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.social-media-left, .social-media-right {
+    text-align: center;
+}
+
+.social-media-left li, .social-media-right li {
+    padding: 6px;
+}
+
+.input-box {
+    border-radius: 5px;
+    border-style: hidden;
+    border: 1px solid #FF1616;
+}
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.home-paragraph {
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade {
+    height: 30%;
+    width: 30%;
+}

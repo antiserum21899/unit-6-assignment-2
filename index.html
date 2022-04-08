@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
+    <head>
         <title>24 Hour Fitness - Home Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
-        <link rel="stylesheet" href="static/css/style.css">
-    </header>
+        <link rel="stylesheet" href="static/css/global.css">
+    </head>
     <body>
-        <div class="nav-container">
-            <a class="logo-link" href="index.html"><img class="logo" src="#" alt="logo"></a>
+        <div id="top" class="nav-container">
+            <a class="logo-link link" href="index.html"><img src="static/images/logo.jpg" height="40" width="80"></a>
             <ul class="nav-list-left">
-                <li class="home"><a href="index.html">Home</a></li>
-                <li class="create"><a href="static/pages/create.html">Create</a></li>
-                <li class="view"><a href="static/pages/view.html">View</a></li>
-                <li class="about"><a href="static/pages/about.html">About</a></li>
+                <li class="home"><a class="link" href="index.html">Home</a></li>
+                <li class="create"><a class="link" href="static/pages/create.html">Create</a></li>
+                <li class="view"><a class="link" href="static/pages/view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="static/pages/about.html">About</a></li>
             </ul>
             <ul class="nav-list-right">
-                <li class="login"><a href="static/pages/login.html">Login</a></li>
-                <li class="account"><a href="static/pages/account.html">Account</a></li>
+                <li class="login"><a class="link" href="static/pages/login.html">Login</a></li>
+                <li class="account"><a class="link" href="static/pages/account.html">Account</a></li>
             </ul>
         </div>
-        <div>
-
+        <div class="main">
+            <p class="home-paragraph">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="slideshow-container">
+                <img class="fade" src="static/images/stock-barbell-rack.jpg">
+                <img class="fade" src="static/images/stock-gym-photo.jpg">
+                <img class="fade" src="static/images/stock-dumbbells.jpg">
+                <img class="fade" src="static/images/stock-barbell.jpg">
+            </div>
+            <script> // Logic for Image Slideshow
+                let slideIndex = 0; 
+                showSlides();
+        
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("fade");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}
+                  slides[slideIndex-1].style.display = "block";
+                  setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+            </script>
         </div>
-        <div class="footer-nav-bar-container">
-            <p>Copyright ©</p>
-            <ul class="social-media">
-                <div class="social-media-left">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
-                </div>
-                <div class="social-media-right">
-                    <li class="instagram">Instagram</li>
-                    <li class="youtube">Youtube</li>
-                </div>
-            </ul>
-        </div>
-
     </body>
-
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
 </html>

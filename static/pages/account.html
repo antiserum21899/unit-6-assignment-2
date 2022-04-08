@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <title>24 Hour Fitness - Home Page</title>
+    <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/style.css">
-    </header>
+        <title>24 Hour Fitness - Account</title>
+        <link rel="stylesheet" href="../css/global.css">
+    </head>
     <body>
         <div class="nav-container">
-            <a class="logo-link" href="../../index.html"><img class="logo" src="#" alt="logo"></a>
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
             <ul class="nav-list-left">
-                <li class="home"><a href="../../index.html">Home</a></li>
-                <li class="create"><a href="create.html">Create</a></li>
-                <li class="view"><a href="view.html">View</a></li>
-                <li class="about"><a href="about.html">About</a></li>
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
             </ul>
             <ul class="nav-list-right">
-                <li class="login"><a href="login.html">Login</a></li>
-                <li class="account"><a href="account.html">Account</a></li>
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
             </ul>
         </div>
-        <div>
-
-        </div>
-        <div class="footer-nav-bar-container">
-            <p>Copyright ©</p>
-            <ul class="social-media">
-                <div class="social-media-left">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
+        <div class="main-account-body">
+            <h1>Account Overview</h1>
+            <div class="card-container">
+                <div class="card">
+                    <div class="personal-info">
+                        <a href="account-personal-info.html" class="account-link"><div class="card-title">Personal Information</div>
+                        <img class="account-icon" src="../images/personal-info-icon.png" alt="personal info icon" width="100px" height="100px"></a>
+                    </div>
                 </div>
-                <div class="social-media-right">
-                    <li class="instagram">Instagram</li>
-                    <li class="youtube">Youtube</li>
+                <div class="card">
+                    <div class="manage-plans">
+                        <a href="account-workout-plans.html" class="account-link"><div class="card-title">Manage Plans</div>
+                        <img class="account-icon" src="../images/stock-warehouse-icon.png" alt="personal info icon" width="100px" height="100px"></a>
+                    </div>
                 </div>
-            </ul>
+            </div>
         </div>
-
     </body>
-
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
 </html>

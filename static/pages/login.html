@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <title>24 Hour Fitness - Home Page</title>
+    <head>
+        <title>24 Hour Fitness - Login</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/style.css">
-    </header>
+        <link rel="stylesheet" href="../css/global.css">
+        <script type="text/javascript" src="../javascript/popups.js"></script>
+    </head>
     <body>
         <div class="nav-container">
-            <a class="logo-link" href="../../index.html"><img class="logo" src="#" alt="logo"></a>
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
             <ul class="nav-list-left">
-                <li class="home"><a href="../../index.html">Home</a></li>
-                <li class="create"><a href="create.html">Create</a></li>
-                <li class="view"><a href="view.html">View</a></li>
-                <li class="about"><a href="about.html">About</a></li>
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
             </ul>
             <ul class="nav-list-right">
-                <li class="login"><a href="login.html">Login</a></li>
-                <li class="account"><a href="account.html">Account</a></li>
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
             </ul>
         </div>
-        <div>
-
-        </div>
-        <div class="footer-nav-bar-container">
-            <p>Copyright ©</p>
-            <ul class="social-media">
-                <div class="social-media-left">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
+        <div class="login-page">
+            <h1>Login</h1>
+            <form class="login-form" method="post">
+                <div class="login-form-container">
+                    <div class="login-email-container">
+                        <label for="email" class="email-label">Email</label>
+                        <input id="email" class="input-box" type="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="login-password-container">
+                        <label for="password">Password</label>
+                        <input id="password" class="input-box" type="password" name="password" required>
+                        <div class="reset-signup-container">
+                            <a href="#" class="reset-password link">Reset Password</a>
+                            <a href="signup.html" class="signup link">Signup</a>
+                        </div>
+                    </div>
+                    <div class="login-button-container">
+                        <a href="account.html"><button type="button" onclick="confirmLoginMessage()" class="login-button input-box">Login</button></a>
+                    </div>
                 </div>
-                <div class="social-media-right">
-                    <li class="instagram">Instagram</li>
-                    <li class="youtube">Youtube</li>
-                </div>
-            </ul>
+            </form>
         </div>
-
     </body>
-
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
 </html>

@@ -1,41 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
+    <head>
         <title>24 Hour Fitness - Create Workout Plan</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/style.css">
-    </header>
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" href="../css/global.css">
+        <script type="text/javascript" src="../javascript/popups.js"></script>
+    </head>
     <body>
         <div class="nav-container">
-            <a class="logo-link" href="../../index.html"><img class="logo" src="#" alt="logo"></a>
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
             <ul class="nav-list-left">
-                <li class="home"><a href="../../index.html">Home</a></li>
-                <li class="create"><a href="create.html">Create</a></li>
-                <li class="view"><a href="view.html">View</a></li>
-                <li class="about"><a href="about.html">About</a></li>
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
             </ul>
             <ul class="nav-list-right">
-                <li class="login"><a href="login.html">Login</a></li>
-                <li class="account"><a href="account.html">Account</a></li>
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
             </ul>
         </div>
-        <div>
+        <div id="create-workout-plan-container">
+            <h1 id="top">Workout Plan</h1>
+            <form id="plan-form" class="workout-plan-form">
+                <div class="workout-plan-form-container">
+                    <div class="workout-plan-name">
+                        <label for="plan-name">Workout Plan Name</label><br>
+                        <input id="plan-name" class="input-box" type="text" name="workout-plan-name">
+                    </div>
 
-        </div>
-        <div class="footer-nav-bar-container">
-            <p>Copyright ©</p>
-            <ul class="social-media">
-                <div class="social-media-left">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
-                </div>
-                <div class="social-media-right">
-                    <li class="instagram">Instagram</li>
-                    <li class="youtube">Youtube</li>
-                </div>
-            </ul>
-        </div>
+                    <div class="workout-name">
+                        <label for="workout-name">Workout Name</label><br>
+                        <input id="workout-name" class="input-box" type="text" name="workout-name">
+                    </div>
 
+                    <div class="datetime">
+                        <label for="day-dropdown" class="day">Day</label>        
+                        <select id="day-dropdown" class="day-selector input-box" name="day">
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <label for="time-dropdown" class="time">Time</label>
+                        <select id="time-dropdown" class="time-selector input-box" name="time">
+                            <option value="00:00">00:00</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+                    </div>
+                    <div id="exercise-selector-container">
+                        <div class="exercise-selector">
+                            <label for="exercises-1">Exercise</label><br>
+                            <select id="exercises-1" class="input-box" name="exercises">
+                                <option value="barbell-curls">Barbell Curls</option>
+                                <option value="dumbbell-curlse">Dumbbell Curls</option>
+                                <option value="lat-pulldowns">Lat Pulldowns</option>
+                                <option value="deadlifts">Deadlifts</option>
+                                <option value="tricep-extensions">Tricep Extensions</option>
+                                <option value="squats">Squats</option>
+                                <option value="barbell-chest-press">Barbell Chest Press</option>
+                            </select>
+                        </div>                        
+                        <div class="exercise-selector">
+                            <label for="exercises-2">Exercise</label><br>
+                            <select id="exercises-2" class="input-box" name="exercises">
+                                <option value="barbell-curls">Barbell Curls</option>
+                                <option value="dumbbell-curlse">Dumbbell Curls</option>
+                                <option value="lat-pulldowns">Lat Pulldowns</option>
+                                <option value="deadlifts">Deadlifts</option>
+                                <option value="tricep-extensions">Tricep Extensions</option>
+                                <option value="squats">Squats</option>
+                                <option value="barbell-chest-press">Barbell Chest Press</option>
+                            </select>
+                        </div>
+                        <div class="exercise-selector">
+                            <label for="exercises-3">Exercise</label><br>
+                            <select id="exercises-3" class="input-box" name="exercises">
+                                <option value="barbell-curls">Barbell Curls</option>
+                                <option value="dumbbell-curlse">Dumbbell Curls</option>
+                                <option value="lat-pulldowns">Lat Pulldowns</option>
+                                <option value="deadlifts">Deadlifts</option>
+                                <option value="tricep-extensions">Tricep Extensions</option>
+                                <option value="squats">Squats</option>
+                                <option value="barbell-chest-press">Barbell Chest Press</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="create-plan-save-button input-box" onclick="confirmCreationMessage()" type="button">Save</button>
+                </div>  
+            </form>
+            <p id="creation-message"></p>
+        </div>
     </body>
-
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
 </html>

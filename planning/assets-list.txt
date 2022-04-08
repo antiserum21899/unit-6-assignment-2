@@ -1,8 +1,8 @@
 ----ASSETS----
 
 IMAGES
-stock-kettlebells.jpg
-stock-barbell.jpg
-stock-dumbbells.jpg
-stock-gym-photo.jpg
-stock-gym-photo.jpg
+stock-kettlebells.jpg - https://www.pexels.com/photo/athlete-barbell-bodybuilder-bodybuilding-416717/
+stock-barbell.jpg - https://www.pexels.com/photo/10-lb-rogue-weight-plate-near-people-gathered-703016/
+stock-dumbbells.jpg - https://www.pexels.com/photo/bodybuilding-close-up-dumbbells-equipment-260352/
+stock-gym-photo.jpg - https://www.pexels.com/photo/man-in-black-tank-top-lifting-barbell-at-the-gym-2628215/
+stock-barbell-rack.jpg - https://unsplash.com/photos/9MR78HGoflw

@@ -1,0 +1,22 @@
+h2 {
+    color: #FF1616;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    height: 1000px;
+}
+
+.goals-heading {
+    margin-left: 38px;
+}
+
+.our-history, .our-goals {
+    width: 50%;
+}
+
+.goals-list .goal {
+    padding: 10px;
+}

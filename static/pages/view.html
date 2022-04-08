@@ -1,41 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
     <header>
-        <title>24 Hour Fitness - Home Page</title>
+        <title>24 Hour Fitness - Calendar</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" href="../css/global.css">
     </header>
     <body>
         <div class="nav-container">
-            <a class="logo-link" href="../../index.html"><img class="logo" src="#" alt="logo"></a>
+            <a class="logo-link link" href="../../index.html"><img src="../images/logo.jpg" height="40" width="80"></a>
             <ul class="nav-list-left">
-                <li class="home"><a href="../../index.html">Home</a></li>
-                <li class="create"><a href="create.html">Create</a></li>
-                <li class="view"><a href="view.html">View</a></li>
-                <li class="about"><a href="about.html">About</a></li>
+                <li class="home"><a class="link" href="../../index.html">Home</a></li>
+                <li class="create"><a class="link" href="create.html">Create</a></li>
+                <li class="view"><a class="link" href="view.html">Calendar</a></li>
+                <li class="about"><a class="link" href="about.html">About</a></li>
             </ul>
             <ul class="nav-list-right">
-                <li class="login"><a href="login.html">Login</a></li>
-                <li class="account"><a href="account.html">Account</a></li>
+                <li class="login"><a class="link" href="login.html">Login</a></li>
+                <li class="account"><a class="link" href="account.html">Account</a></li>
             </ul>
         </div>
-        <div>
-
-        </div>
-        <div class="footer-nav-bar-container">
-            <p>Copyright ©</p>
-            <ul class="social-media">
-                <div class="social-media-left">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
+        <div class="view-container">
+            <h1>Your Workout Calendar</h1>
+            <div class="table-buttons-container">
+                <div class="table-view-buttons">
+                    <button>Daily</button>
+                    <button>Weekly</button>
+                    <button>Monthly</button>
                 </div>
-                <div class="social-media-right">
-                    <li class="instagram">Instagram</li>
-                    <li class="youtube">Youtube</li>
-                </div>
-            </ul>
+                <table class="calendar-table">
+                    <tr>
+                        <th>Time</th>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                    <tr class="midnight">
+                        <td>00:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="one">
+                        <td>01:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="two">
+                        <td>02:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="three">
+                        <td>03:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="four">
+                        <td>04:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="five">
+                        <td>05:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="six">
+                        <td>06:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="seven">
+                        <td>07:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="eight">
+                        <td>08:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday">Upper Body</td>
+                        <td class="Tuesday">Conditioning</td>
+                        <td class="Wednesday">Upper Body</td>
+                        <td class="Thursday">Conditioning</td>
+                        <td class="Friday">Upper Body</td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="nine">
+                        <td>09:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="ten">
+                        <td>10:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="eleven">
+                        <td>11:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="twelve">
+                        <td>12:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="thirteen">
+                        <td>13:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="fourteen">
+                        <td>14:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="fifthteen">
+                        <td>15:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="sixteen">
+                        <td>16:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="seventeen">
+                        <td>17:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday">Lower Body</td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday">Lower Body</td>
+                        <td class="Thursday"></td>
+                        <td class="Friday">Lower Body</td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="eighteen">
+                        <td>18:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="nineteen">
+                        <td>19:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="twenty">
+                        <td>20:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="twenty-one">
+                        <td>21:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="twenty-two">
+                        <td>22:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                    <tr class="twenty-three">
+                        <td>23:00</td>
+                        <td class="Sunday"></td>
+                        <td class="Monday"></td>
+                        <td class="Tuesday"></td>
+                        <td class="Wednesday"></td>
+                        <td class="Thursday"></td>
+                        <td class="Friday"></td>
+                        <td class="Saturday"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
     </body>
-
+    <div class="footer-nav-bar-container">
+        <p>Copyright ©</p>
+        <ul class="social-media">
+            <div class="social-media-left">
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+            </div>
+            <div class="social-media-right">
+                <li class="instagram">Instagram</li>
+                <li class="youtube">Youtube</li>
+            </div>
+        </ul>
+        <div id="return-to-top">
+            <a id="top-button" class="return-to-top-link link" href="#top">Top</a>
+        </div>
+    </div>
 </html>
